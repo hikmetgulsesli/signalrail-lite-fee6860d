@@ -1,0 +1,20 @@
+[
+  {
+    "screenId": "c2c13563da1d475cb71411da80b7a3bb",
+    "name": "Gameplay - SignalRail Lite",
+    "type": "game",
+    "description": "Gameplay - SignalRail Lite screen",
+    "surfaceIds": [
+      "SURF_GAMEPLAY"
+    ]
+  },
+  {
+    "screenId": "2f287425e0c64121b01e8f581bd5eaed",
+    "name": "Game Settings - SignalRail Lite",
+    "type": "settings",
+    "description": "Game Settings - SignalRail Lite screen",
+    "surfaceIds": [
+      "SURF_GAME_SETTINGS"
+    ]
+  }
+]

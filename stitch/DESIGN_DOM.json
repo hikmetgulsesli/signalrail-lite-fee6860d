@@ -1,0 +1,958 @@
+{
+  "generatedAt": "2026-06-06T07:17:04.647Z",
+  "screenCount": 5,
+  "screens": {
+    "2f287425e0c64121b01e8f581bd5eaed": {
+      "screenId": "2f287425e0c64121b01e8f581bd5eaed",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "main",
+          "layout": "relative",
+          "classes": [
+            "relative",
+            "z-10",
+            "w-full",
+            "max-w-2xl",
+            "px-margin-mobile",
+            "md:px-margin-desktop",
+            "py-8"
+          ],
+          "childCount": 21
+        },
+        {
+          "tag": "footer",
+          "layout": "flex-row",
+          "classes": [
+            "fixed",
+            "bottom-0",
+            "w-full",
+            "bg-surface-container-lowest/40",
+            "backdrop-blur-md",
+            "border-t",
+            "border-outline-variant/30",
+            "flex",
+            "justify-between",
+            "items-center"
+          ],
+          "childCount": 3
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "BACK TO SYSTEM",
+          "classes": [
+            "flex",
+            "items-center",
+            "gap-2",
+            "text-primary-fixed-dim",
+            "hover:text-primary-fixed",
+            "hover:drop-shadow-[0_0_12px_rgba(116,245,255,0.8)]",
+            "transition-all",
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "arrow_back",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Reset Preferences",
+          "classes": [
+            "font-label-sm",
+            "text-label-sm",
+            "text-on-surface-variant",
+            "hover:text-error",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "gap-1"
+          ],
+          "icon": "restart_alt",
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "RETURN TO GAMEPLAY",
+          "classes": [
+            "bg-surface-variant/50",
+            "border",
+            "border-outline-variant",
+            "text-on-surface",
+            "hover:bg-surface-variant",
+            "font-label-md",
+            "text-label-md",
+            "py-3",
+            "px-6",
+            "rounded-DEFAULT",
+            "transition-all",
+            "text-center",
+            "tracking-widest",
+            "uppercase",
+            "flex",
+            "justify-center",
+            "items-center",
+            "gap-2"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "PREFERENCES",
+          "classes": [
+            "bg-primary-fixed-dim/10",
+            "border",
+            "border-primary-fixed-dim",
+            "text-primary-fixed-dim",
+            "hover:bg-primary-fixed-dim/20",
+            "font-label-md",
+            "text-label-md",
+            "py-3",
+            "px-6",
+            "rounded-DEFAULT",
+            "transition-all",
+            "text-center",
+            "tracking-widest",
+            "uppercase",
+            "glow-border",
+            "flex",
+            "justify-center",
+            "items-center",
+            "gap-2"
+          ],
+          "icon": "save",
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "SignalRail Lite",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "© 2124 NEON-TRANSIT SYSTEMS",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "radio",
+          "label": "difficulty",
+          "placeholder": "",
+          "name": "difficulty",
+          "classes": [
+            "peer",
+            "sr-only"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "range",
+          "label": "speed-slider",
+          "placeholder": "",
+          "name": "speed-slider",
+          "classes": [
+            "w-full",
+            "h-1",
+            "bg-surface-variant",
+            "rounded-full",
+            "appearance-none",
+            "outline-none",
+            "focus:glow-border"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "PROTOCOL",
+          "href": "#",
+          "classes": [
+            "font-label-sm",
+            "text-label-sm",
+            "text-on-surface-variant",
+            "hover:text-primary-fixed",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "RECOVERY",
+          "href": "#",
+          "classes": [
+            "font-label-sm",
+            "text-label-sm",
+            "text-on-surface-variant",
+            "hover:text-primary-fixed",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "MANUAL",
+          "href": "#",
+          "classes": [
+            "font-label-sm",
+            "text-label-sm",
+            "text-on-surface-variant",
+            "hover:text-primary-fixed",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "arrow_back",
+        "restart_alt",
+        "save"
+      ],
+      "images": [
+        {
+          "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAYAAAB/HSuDAAAQAElEQVR4AezdB7wlZ1038P/cLdmU3U0vC0hokgQSUEQwRBBRIMILCAjSlRdEEaWIEIoUUSmhgyDFApEi7aVJLwJSLBSTkARECCTuLtnUzW6233mfuWlb7u6ee87MnGdmvv",
+          "alt": "SignalRail Lite Logo"
+        }
+      ],
+      "cssVars": {},
+      "colorPalette": {
+        "on-surface-variant": "#b9cacb",
+        "on-surface": "#e4e1e9",
+        "surface-container": "#1f1f25",
+        "secondary-container": "#ffdb3c",
+        "primary-fixed-dim": "#00dbe7",
+        "secondary-fixed-dim": "#e9c400",
+        "surface-variant": "#35343a",
+        "tertiary": "#fff6f5",
+        "on-tertiary-container": "#c10037",
+        "on-error-container": "#ffdad6",
+        "primary-container": "#00f2ff",
+        "on-tertiary": "#680019",
+        "primary-fixed": "#74f5ff",
+        "on-error": "#690005",
+        "secondary": "#fff9ef",
+        "on-primary-fixed": "#002022",
+        "surface": "#131318",
+        "surface-container-highest": "#35343a",
+        "on-primary-container": "#006a71",
+        "on-background": "#e4e1e9",
+        "surface-bright": "#39383e",
+        "background": "#131318",
+        "on-primary": "#00363a",
+        "inverse-surface": "#e4e1e9",
+        "tertiary-fixed": "#ffdada",
+        "on-secondary-container": "#725f00",
+        "on-secondary-fixed": "#221b00",
+        "inverse-primary": "#00696f",
+        "error": "#ffb4ab",
+        "surface-container-high": "#2a292f",
+        "primary": "#e1fdff",
+        "tertiary-container": "#ffd0d1",
+        "error-container": "#93000a",
+        "on-tertiary-fixed-variant": "#920027",
+        "outline-variant": "#3a494b",
+        "outline": "#849495",
+        "surface-container-lowest": "#0e0e13",
+        "on-secondary-fixed-variant": "#544600",
+        "surface-container-low": "#1b1b20",
+        "on-tertiary-fixed": "#40000c",
+        "surface-dim": "#131318",
+        "secondary-fixed": "#ffe16d",
+        "tertiary-fixed-dim": "#ffb3b5",
+        "inverse-on-surface": "#303036",
+        "surface-tint": "#00dbe7",
+        "on-secondary": "#3a3000",
+        "on-primary-fixed-variant": "#004f54"
+      },
+      "fonts": [
+        "Material Symbols Outlined",
+        "Hanken Grotesk",
+        "JetBrains Mono",
+        "Space Mono"
+      ],
+      "layoutHints": {
+        "gridCols": 3,
+        "flexDirection": "col",
+        "gap": "2"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "PROTOCOL",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "RECOVERY",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "MANUAL",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "BACK TO SYSTEM",
+          "icon": "arrow_back",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Reset Preferences",
+          "icon": "restart_alt",
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "RETURN TO GAMEPLAY",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "PREFERENCES",
+          "icon": "save",
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "SignalRail Lite",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "© 2124 NEON-TRANSIT SYSTEMS",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "input",
+          "label": "difficulty",
+          "type": "radio",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "speed-slider",
+          "type": "range",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "SignalRail Lite",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "PROTOCOL",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "RECOVERY",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "MANUAL",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "© 2124 NEON-TRANSIT SYSTEMS",
+          "icon": null,
+          "active": false
+        }
+      ],
+      "title": "Game Settings - SignalRail Lite"
+    },
+    "4100cc6e9b764f4780427eb703d30bd9": {
+      "screenId": "4100cc6e9b764f4780427eb703d30bd9",
+      "materialSymbolsRequired": false,
+      "sections": [],
+      "buttons": [],
+      "inputs": [],
+      "navLinks": [],
+      "cards": [],
+      "icons": [],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "on-surface-variant": "#b9cacb",
+        "on-surface": "#e4e1e9",
+        "surface-container": "#1f1f25",
+        "secondary-container": "#ffdb3c",
+        "primary-fixed-dim": "#00dbe7",
+        "secondary-fixed-dim": "#e9c400",
+        "surface-variant": "#35343a",
+        "tertiary": "#fff6f5",
+        "on-tertiary-container": "#c10037",
+        "on-error-container": "#ffdad6",
+        "primary-container": "#00f2ff",
+        "on-tertiary": "#680019",
+        "primary-fixed": "#74f5ff",
+        "on-error": "#690005",
+        "secondary": "#fff9ef",
+        "on-primary-fixed": "#002022",
+        "surface": "#131318",
+        "surface-container-highest": "#35343a",
+        "on-primary-container": "#006a71",
+        "on-background": "#e4e1e9",
+        "surface-bright": "#39383e",
+        "background": "#131318",
+        "on-primary": "#00363a",
+        "inverse-surface": "#e4e1e9",
+        "tertiary-fixed": "#ffdada",
+        "on-secondary-container": "#725f00",
+        "on-secondary-fixed": "#221b00",
+        "inverse-primary": "#00696f",
+        "error": "#ffb4ab",
+        "surface-container-high": "#2a292f",
+        "primary": "#e1fdff",
+        "tertiary-container": "#ffd0d1",
+        "error-container": "#93000a",
+        "on-tertiary-fixed-variant": "#920027",
+        "outline-variant": "#3a494b",
+        "outline": "#849495",
+        "surface-container-lowest": "#0e0e13",
+        "on-secondary-fixed-variant": "#544600",
+        "surface-container-low": "#1b1b20",
+        "on-tertiary-fixed": "#40000c",
+        "surface-dim": "#131318",
+        "secondary-fixed": "#ffe16d",
+        "tertiary-fixed-dim": "#ffb3b5",
+        "inverse-on-surface": "#303036",
+        "surface-tint": "#00dbe7",
+        "on-secondary": "#3a3000",
+        "on-primary-fixed-variant": "#004f54"
+      },
+      "fonts": [],
+      "layoutHints": {},
+      "behaviorContract": [],
+      "tabBar": [],
+      "title": "SignalRail Lite Logo"
+    },
+    "870b77b69f774805b9272003d3178526": {
+      "screenId": "870b77b69f774805b9272003d3178526",
+      "materialSymbolsRequired": false,
+      "sections": [],
+      "buttons": [],
+      "inputs": [],
+      "navLinks": [],
+      "cards": [],
+      "icons": [],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "on-surface-variant": "#b9cacb",
+        "on-surface": "#e4e1e9",
+        "surface-container": "#1f1f25",
+        "secondary-container": "#ffdb3c",
+        "primary-fixed-dim": "#00dbe7",
+        "secondary-fixed-dim": "#e9c400",
+        "surface-variant": "#35343a",
+        "tertiary": "#fff6f5",
+        "on-tertiary-container": "#c10037",
+        "on-error-container": "#ffdad6",
+        "primary-container": "#00f2ff",
+        "on-tertiary": "#680019",
+        "primary-fixed": "#74f5ff",
+        "on-error": "#690005",
+        "secondary": "#fff9ef",
+        "on-primary-fixed": "#002022",
+        "surface": "#131318",
+        "surface-container-highest": "#35343a",
+        "on-primary-container": "#006a71",
+        "on-background": "#e4e1e9",
+        "surface-bright": "#39383e",
+        "background": "#131318",
+        "on-primary": "#00363a",
+        "inverse-surface": "#e4e1e9",
+        "tertiary-fixed": "#ffdada",
+        "on-secondary-container": "#725f00",
+        "on-secondary-fixed": "#221b00",
+        "inverse-primary": "#00696f",
+        "error": "#ffb4ab",
+        "surface-container-high": "#2a292f",
+        "primary": "#e1fdff",
+        "tertiary-container": "#ffd0d1",
+        "error-container": "#93000a",
+        "on-tertiary-fixed-variant": "#920027",
+        "outline-variant": "#3a494b",
+        "outline": "#849495",
+        "surface-container-lowest": "#0e0e13",
+        "on-secondary-fixed-variant": "#544600",
+        "surface-container-low": "#1b1b20",
+        "on-tertiary-fixed": "#40000c",
+        "surface-dim": "#131318",
+        "secondary-fixed": "#ffe16d",
+        "tertiary-fixed-dim": "#ffb3b5",
+        "inverse-on-surface": "#303036",
+        "surface-tint": "#00dbe7",
+        "on-secondary": "#3a3000",
+        "on-primary-fixed-variant": "#004f54"
+      },
+      "fonts": [],
+      "layoutHints": {},
+      "behaviorContract": [],
+      "tabBar": [],
+      "title": "Three.js"
+    },
+    "b47e3025d6c64babb946c61124646c9e": {
+      "screenId": "b47e3025d6c64babb946c61124646c9e",
+      "materialSymbolsRequired": false,
+      "sections": [],
+      "buttons": [],
+      "inputs": [],
+      "navLinks": [],
+      "cards": [],
+      "icons": [],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "on-surface-variant": "#b9cacb",
+        "on-surface": "#e4e1e9",
+        "surface-container": "#1f1f25",
+        "secondary-container": "#ffdb3c",
+        "primary-fixed-dim": "#00dbe7",
+        "secondary-fixed-dim": "#e9c400",
+        "surface-variant": "#35343a",
+        "tertiary": "#fff6f5",
+        "on-tertiary-container": "#c10037",
+        "on-error-container": "#ffdad6",
+        "primary-container": "#00f2ff",
+        "on-tertiary": "#680019",
+        "primary-fixed": "#74f5ff",
+        "on-error": "#690005",
+        "secondary": "#fff9ef",
+        "on-primary-fixed": "#002022",
+        "surface": "#131318",
+        "surface-container-highest": "#35343a",
+        "on-primary-container": "#006a71",
+        "on-background": "#e4e1e9",
+        "surface-bright": "#39383e",
+        "background": "#131318",
+        "on-primary": "#00363a",
+        "inverse-surface": "#e4e1e9",
+        "tertiary-fixed": "#ffdada",
+        "on-secondary-container": "#725f00",
+        "on-secondary-fixed": "#221b00",
+        "inverse-primary": "#00696f",
+        "error": "#ffb4ab",
+        "surface-container-high": "#2a292f",
+        "primary": "#e1fdff",
+        "tertiary-container": "#ffd0d1",
+        "error-container": "#93000a",
+        "on-tertiary-fixed-variant": "#920027",
+        "outline-variant": "#3a494b",
+        "outline": "#849495",
+        "surface-container-lowest": "#0e0e13",
+        "on-secondary-fixed-variant": "#544600",
+        "surface-container-low": "#1b1b20",
+        "on-tertiary-fixed": "#40000c",
+        "surface-dim": "#131318",
+        "secondary-fixed": "#ffe16d",
+        "tertiary-fixed-dim": "#ffb3b5",
+        "inverse-on-surface": "#303036",
+        "surface-tint": "#00dbe7",
+        "on-secondary": "#3a3000",
+        "on-primary-fixed-variant": "#004f54"
+      },
+      "fonts": [],
+      "layoutHints": {},
+      "behaviorContract": [],
+      "tabBar": [],
+      "title": "Shader"
+    },
+    "c2c13563da1d475cb71411da80b7a3bb": {
+      "screenId": "c2c13563da1d475cb71411da80b7a3bb",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "flex-row",
+          "classes": [
+            "hud-panel",
+            "flex",
+            "justify-between",
+            "items-center",
+            "px-margin-desktop",
+            "py-unit",
+            "h-16",
+            "w-full",
+            "z-50",
+            "fixed"
+          ],
+          "childCount": 7
+        },
+        {
+          "tag": "main",
+          "layout": "flex-row",
+          "classes": [
+            "flex-grow",
+            "relative",
+            "z-10",
+            "mt-16",
+            "w-full",
+            "h-full",
+            "flex",
+            "justify-center",
+            "items-center",
+            "pointer-events-none"
+          ],
+          "childCount": 4
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Pause Game",
+          "classes": [
+            "p-2",
+            "text-on-surface-variant",
+            "hover:text-primary-fixed",
+            "hover:drop-shadow-[0_0_12px_rgba(116,245,255,0.8)]",
+            "transition-all",
+            "rounded"
+          ],
+          "icon": "pause",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Settings",
+          "classes": [
+            "p-2",
+            "text-on-surface-variant",
+            "hover:text-primary-fixed",
+            "hover:drop-shadow-[0_0_12px_rgba(116,245,255,0.8)]",
+            "transition-all",
+            "rounded"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/settings",
+          "expectedRoute": "/settings",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "Start Drive",
+          "classes": [
+            "cyber-button",
+            "font-headline-md",
+            "text-headline-md",
+            "text-primary-fixed",
+            "py-4",
+            "px-8",
+            "rounded",
+            "uppercase",
+            "tracking-widest",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-2"
+          ],
+          "icon": "play_arrow",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Restart Sequence",
+          "classes": [
+            "border",
+            "border-outline-variant",
+            "text-on-surface-variant",
+            "hover:text-primary-fixed-dim",
+            "hover:border-primary-fixed-dim",
+            "bg-surface-container/50",
+            "backdrop-blur-md",
+            "py-3",
+            "px-6",
+            "rounded",
+            "font-label-md",
+            "text-label-md",
+            "uppercase",
+            "tracking-wider",
+            "transition-all"
+          ],
+          "icon": null,
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "SignalRail Lite SRL",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Score 12,450",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Level 04",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Lives",
+          "classes": [],
+          "icon": "favorite",
+          "action": "navigate",
+          "expectedRoute": "/favorites",
+          "routeInferred": true,
+          "expectedBehavior": "navigate:/favorites"
+        },
+        {
+          "kind": "button",
+          "label": "pause",
+          "classes": [],
+          "icon": "pause",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [],
+      "cards": [],
+      "icons": [
+        "favorite",
+        "pause",
+        "settings",
+        "play_arrow"
+      ],
+      "images": [
+        {
+          "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAYAAAB/HSuDAAAQAElEQVR4AezdB7wlZ1038P/cLdmU3U0vC0hokgQSUEQwRBBRIMILCAjSlRdEEaWIEIoUUSmhgyDFApEi7aVJLwJSLBSTkARECCTuLtnUzW6233mfuWlb7u6ee87MnGdmvv",
+          "alt": "SignalRail Lite Logo"
+        }
+      ],
+      "cssVars": {},
+      "colorPalette": {
+        "on-surface-variant": "#b9cacb",
+        "on-surface": "#e4e1e9",
+        "surface-container": "#1f1f25",
+        "secondary-container": "#ffdb3c",
+        "primary-fixed-dim": "#00dbe7",
+        "secondary-fixed-dim": "#e9c400",
+        "surface-variant": "#35343a",
+        "tertiary": "#fff6f5",
+        "on-tertiary-container": "#c10037",
+        "on-error-container": "#ffdad6",
+        "primary-container": "#00f2ff",
+        "on-tertiary": "#680019",
+        "primary-fixed": "#74f5ff",
+        "on-error": "#690005",
+        "secondary": "#fff9ef",
+        "on-primary-fixed": "#002022",
+        "surface": "#131318",
+        "surface-container-highest": "#35343a",
+        "on-primary-container": "#006a71",
+        "on-background": "#e4e1e9",
+        "surface-bright": "#39383e",
+        "background": "#131318",
+        "on-primary": "#00363a",
+        "inverse-surface": "#e4e1e9",
+        "tertiary-fixed": "#ffdada",
+        "on-secondary-container": "#725f00",
+        "on-secondary-fixed": "#221b00",
+        "inverse-primary": "#00696f",
+        "error": "#ffb4ab",
+        "surface-container-high": "#2a292f",
+        "primary": "#e1fdff",
+        "tertiary-container": "#ffd0d1",
+        "error-container": "#93000a",
+        "on-tertiary-fixed-variant": "#920027",
+        "outline-variant": "#3a494b",
+        "outline": "#849495",
+        "surface-container-lowest": "#0e0e13",
+        "on-secondary-fixed-variant": "#544600",
+        "surface-container-low": "#1b1b20",
+        "on-tertiary-fixed": "#40000c",
+        "surface-dim": "#131318",
+        "secondary-fixed": "#ffe16d",
+        "tertiary-fixed-dim": "#ffb3b5",
+        "inverse-on-surface": "#303036",
+        "surface-tint": "#00dbe7",
+        "on-secondary": "#3a3000",
+        "on-primary-fixed-variant": "#004f54"
+      },
+      "fonts": [
+        "Material Symbols Outlined",
+        "JetBrains Mono",
+        "Space Mono",
+        "Hanken Grotesk"
+      ],
+      "layoutHints": {
+        "flexDirection": "col",
+        "gap": "4"
+      },
+      "behaviorContract": [
+        {
+          "kind": "button",
+          "label": "Pause Game",
+          "icon": "pause",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Settings",
+          "icon": "settings",
+          "action": "navigate",
+          "route": "/settings",
+          "expectedBehavior": "navigate:/settings"
+        },
+        {
+          "kind": "button",
+          "label": "Start Drive",
+          "icon": "play_arrow",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Restart Sequence",
+          "icon": null,
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "SignalRail Lite SRL",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Score 12,450",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Level 04",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Lives",
+          "icon": "favorite",
+          "action": "navigate",
+          "route": "/favorites",
+          "expectedBehavior": "navigate:/favorites"
+        },
+        {
+          "kind": "button",
+          "label": "pause",
+          "icon": "pause",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "SignalRail Lite SRL",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "Score 12,450",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "Level 04",
+          "icon": null,
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "Lives",
+          "icon": "favorite",
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "pause",
+          "icon": "pause",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "Settings",
+          "icon": "settings",
+          "active": true
+        }
+      ],
+      "title": "Gameplay - SignalRail Lite"
+    }
+  }
+}

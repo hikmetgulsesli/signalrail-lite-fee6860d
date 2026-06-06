@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+    }
+  </style>
+</head>
+<body>
+<!-- STITCH_THREEJS_START:ANIMATION_2 class="fixed inset-0 w-full h-full bg-transparent" -->
+<div class="fixed inset-0 w-full h-full bg-transparent" style="display:block;">
+<script src="https://ajax.googleapis.com/ajax/libs/threejs/r125/three.min.js"></script>
+<div id="threejs-container-ANIMATION_2" style="width:100%;height:100%"></div>
+<script>
+(function() {
+  const container = document.getElementById('threejs-container-ANIMATION_2');
+  const devicePixelRatio = window.devicePixelRatio || 1;
+  // SignalRail Lite Gameplay Logic
+const container = document.querySelector('.game-canvas-container') || document.body;
+const canvas = document.createElement('canvas');
+const ctx = canvas.getContext('2d');
+container.appendChild(canvas);
+
+let width, height;
+function resize() {
+    width = canvas.width = container.clientWidth || window.innerWidth;
+    height = canvas.height = container.clientHeight || window.innerHeight;
+}
+window.addEventListener('resize', resize);
+resize();
+
+let pulses = [];
+let gates = [
+    { x: 0.3, y: 0.5, state: 0 },
+    { x: 0.6, y: 0.5, state: 1 }
+];
+
+function spawnPulse() {
+    pulses.push({ x: 0, y: 0.5, speed: 0.002 + Math.random() * 0.001 });
+}
+
+setInterval(spawnPulse, 3000);
+
+function draw() {
+    ctx.clearRect(0, 0, width, height);
+    
+    // Draw Rails
+    ctx.strokeStyle = '#1e293b';
+    ctx.lineWidth = 4;
+    ctx.beginPath();
+    ctx.moveTo(0, height * 0.5);
+    ctx.lineTo(width, height * 0.5);
+    ctx.stroke();
+
+    // Draw Gates
+    gates.forEach(gate => {
+        ctx.fillStyle = gate.state === 0 ? '#00f2ff' : '#ffd700';
+        ctx.shadowBlur = 15;
+        ctx.shadowColor = ctx.fillStyle;
+        ctx.fillRect(gate.x * width - 20, gate.y * height - 40, 40, 80);
+        ctx.shadowBlur = 0;
+    });
+
+    // Update and Draw Pulses
+    pulses = pulses.filter(p => {
+        p.x += p.speed;
+        ctx.fillStyle = '#ffffff';
+        ctx.beginPath();
+        ctx.arc(p.x * width, p.y * height, 8, 0, Math.PI * 2);
+        ctx.fill();
+        return p.x < 1.1;
+    });
+
+    requestAnimationFrame(draw);
+}
+
+draw();
+
+// Interaction for gates
+canvas.addEventListener('click', (e) => {
+    const clickX = e.clientX / width;
+    gates.forEach(gate => {
+        if (Math.abs(clickX - gate.x) < 0.05) {
+            gate.state = 1 - gate.state;
+        }
+    });
+});
+})();
+</script>
+</div>
+<!-- STITCH_THREEJS_END:ANIMATION_2 -->
+</body>
+</html>

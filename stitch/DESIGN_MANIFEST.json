@@ -1,0 +1,24 @@
+[
+  {
+    "screenId": "c2c13563da1d475cb71411da80b7a3bb",
+    "title": "Gameplay - SignalRail Lite",
+    "htmlFile": "c2c13563da1d475cb71411da80b7a3bb.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzgwZjllZmU2ZmUzYTQwYjQ5MzdiZDFlZjA5YzZkYzM2EgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhM0MTA5OTE4NTc4MjQ4NjExNjE2&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/signalrail-lite-fee6860d/stitch/c2c13563da1d475cb71411da80b7a3bb.html",
+    "surfaceIds": [
+      "SURF_GAMEPLAY"
+    ]
+  },
+  {
+    "screenId": "2f287425e0c64121b01e8f581bd5eaed",
+    "title": "Game Settings - SignalRail Lite",
+    "htmlFile": "2f287425e0c64121b01e8f581bd5eaed.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzc3ZGFkYWFlZTA1MDQ5MmNhNmQxMjkzYzA3YjIyYTg5EgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhM0MTA5OTE4NTc4MjQ4NjExNjE2&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/signalrail-lite-fee6860d/stitch/2f287425e0c64121b01e8f581bd5eaed.html",
+    "surfaceIds": [
+      "SURF_GAME_SETTINGS"
+    ]
+  }
+]
