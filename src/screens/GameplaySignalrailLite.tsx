@@ -59,9 +59,9 @@ export function GameplaySignalrailLite({ actions, runtime }: GameplaySignalrailL
       <button aria-label="Lives" className="hud-chip px-3 py-1 flex items-center gap-2" type="button" data-action-id="lives-info" onClick={actions?.["settings-2"]} disabled={!actions?.["settings-2"]}>
       <span className="font-label-sm text-label-sm text-on-surface-variant uppercase hidden sm:inline">Lives</span>
       <div className="flex gap-1">
-      <Heart style={{fontVariationSettings: "'FILL' 1"}} className="health-pip" aria-hidden={true} focusable="false" />
-      <Heart style={{fontVariationSettings: "'FILL' 1"}} className="health-pip" aria-hidden={true} focusable="false" />
-      <Heart style={{fontVariationSettings: "'FILL' 1"}} className="health-pip" aria-hidden={true} focusable="false" />
+      {Array.from({ length: runtime?.lives ?? 3 }).map((_, i) => (
+        <Heart key={i} style={{fontVariationSettings: "'FILL' 1"}} className="health-pip" aria-hidden={true} focusable="false" />
+      ))}
       </div>
       </button>
       </div>
