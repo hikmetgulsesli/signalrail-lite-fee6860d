@@ -1,0 +1,93 @@
+[
+  {
+    "screenId": "c2c13563da1d475cb71411da80b7a3bb",
+    "title": "Gameplay - SignalRail Lite",
+    "componentName": "GameplaySignalrailLite",
+    "file": "src/screens/GameplaySignalrailLite.tsx",
+    "buttons": 4,
+    "inputs": 0,
+    "links": 0,
+    "actions": [
+      {
+        "id": "pause-game-1",
+        "kind": "button",
+        "label": "Pause Game",
+        "index": 0
+      },
+      {
+        "id": "settings-2",
+        "kind": "button",
+        "label": "Settings",
+        "index": 1
+      },
+      {
+        "id": "start-drive-3",
+        "kind": "button",
+        "label": "Start Drive",
+        "index": 2
+      },
+      {
+        "id": "restart-sequence-4",
+        "kind": "button",
+        "label": "Restart Sequence",
+        "index": 3
+      }
+    ]
+  },
+  {
+    "screenId": "2f287425e0c64121b01e8f581bd5eaed",
+    "title": "Game Settings - SignalRail Lite",
+    "componentName": "GameSettingsSignalrailLite",
+    "file": "src/screens/GameSettingsSignalrailLite.tsx",
+    "buttons": 4,
+    "inputs": 4,
+    "links": 3,
+    "actions": [
+      {
+        "id": "back-to-system-1",
+        "kind": "button",
+        "label": "BACK TO SYSTEM",
+        "index": 0
+      },
+      {
+        "id": "reset-preferences-2",
+        "kind": "button",
+        "label": "Reset Preferences",
+        "index": 1
+      },
+      {
+        "id": "return-to-gameplay-3",
+        "kind": "button",
+        "label": "RETURN TO GAMEPLAY",
+        "index": 2
+      },
+      {
+        "id": "save-preferences-4",
+        "kind": "button",
+        "label": "SAVE PREFERENCES",
+        "index": 3
+      },
+      {
+        "id": "protocol-1",
+        "kind": "link",
+        "label": "PROTOCOL",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "recovery-2",
+        "kind": "link",
+        "label": "RECOVERY",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "manual-3",
+        "kind": "link",
+        "label": "MANUAL",
+        "href": "#",
+        "index": 2
+      }
+    ]
+  }
+]
