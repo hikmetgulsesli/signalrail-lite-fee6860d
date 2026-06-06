@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T07:17:04.647Z",
+  "generatedAt": "2026-06-06T07:17:26.168Z",
   "screenCount": 5,
   "screens": {
     "2f287425e0c64121b01e8f581bd5eaed": {
@@ -477,7 +477,7 @@
       "layoutHints": {},
       "behaviorContract": [],
       "tabBar": [],
-      "title": "SignalRail Lite Logo"
+      "title": "4100cc6e9b764f4780427eb703d30bd9"
     },
     "870b77b69f774805b9272003d3178526": {
       "screenId": "870b77b69f774805b9272003d3178526",
@@ -543,7 +543,7 @@
       "layoutHints": {},
       "behaviorContract": [],
       "tabBar": [],
-      "title": "Three.js"
+      "title": "870b77b69f774805b9272003d3178526"
     },
     "b47e3025d6c64babb946c61124646c9e": {
       "screenId": "b47e3025d6c64babb946c61124646c9e",
@@ -609,7 +609,7 @@
       "layoutHints": {},
       "behaviorContract": [],
       "tabBar": [],
-      "title": "Shader"
+      "title": "b47e3025d6c64babb946c61124646c9e"
     },
     "c2c13563da1d475cb71411da80b7a3bb": {
       "screenId": "c2c13563da1d475cb71411da80b7a3bb",

@@ -1,0 +1,198 @@
+[
+  {
+    "screenId": "c2c13563da1d475cb71411da80b7a3bb",
+    "screenTitle": "Gameplay - SignalRail Lite",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "Pause Game",
+        "line": 431
+      },
+      {
+        "type": "button",
+        "label": "Settings",
+        "line": 434
+      },
+      {
+        "type": "button",
+        "label": "Start Drive",
+        "line": 458
+      },
+      {
+        "type": "button",
+        "label": "Restart Sequence",
+        "line": 462
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Pause Game",
+        "line": 431
+      },
+      {
+        "type": "button",
+        "label": "Settings",
+        "line": 434
+      },
+      {
+        "type": "button",
+        "label": "Start Drive",
+        "line": 458
+      },
+      {
+        "type": "button",
+        "label": "Restart Sequence",
+        "line": 462
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 4,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "2f287425e0c64121b01e8f581bd5eaed",
+    "screenTitle": "Game Settings - SignalRail Lite",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "PROTOCOL",
+        "href": "#",
+        "line": 332
+      },
+      {
+        "type": "link",
+        "label": "RECOVERY",
+        "href": "#",
+        "line": 333
+      },
+      {
+        "type": "link",
+        "label": "MANUAL",
+        "href": "#",
+        "line": 334
+      },
+      {
+        "type": "button",
+        "label": "BACK TO SYSTEM",
+        "line": 234
+      },
+      {
+        "type": "button",
+        "label": "Reset Preferences",
+        "line": 309
+      },
+      {
+        "type": "button",
+        "label": "RETURN TO GAMEPLAY",
+        "line": 315
+      },
+      {
+        "type": "button",
+        "label": "PREFERENCES",
+        "line": 318
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 252
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 258
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 264
+      },
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 278
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "PROTOCOL",
+        "href": "#",
+        "line": 332
+      },
+      {
+        "type": "link",
+        "label": "RECOVERY",
+        "href": "#",
+        "line": 333
+      },
+      {
+        "type": "link",
+        "label": "MANUAL",
+        "href": "#",
+        "line": 334
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "BACK TO SYSTEM",
+        "line": 234
+      },
+      {
+        "type": "button",
+        "label": "Reset Preferences",
+        "line": 309
+      },
+      {
+        "type": "button",
+        "label": "RETURN TO GAMEPLAY",
+        "line": 315
+      },
+      {
+        "type": "button",
+        "label": "PREFERENCES",
+        "line": 318
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 252
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 258
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 264
+      },
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 278
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 11,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  }
+]
